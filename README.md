@@ -6,11 +6,10 @@ By implementing these functions on our own we will be able to understand the int
 ## Docs
 
 A step-by-step beginner friendly guide can be found [here](https://github.com/Harshitv21/Memory-Allocator-In-C/blob/main/Docs/Memory%20Allocator.md) for anyone who wants to implement or try it for yourself. <br/>
-Source code for this project can be found here.
+Source code for this project can be found [here](https://github.com/Harshitv21/Memory-Allocator-In-C/blob/main/src/memAlloc.c).
 
 ## Compiling and using our memory allocator
 
-You can get the code in this github repo (check `src`).
 We’ll be compiling our memory allocator and then run a utility like **ls** using our memory allocator.
 
 First compile it as a library file.
