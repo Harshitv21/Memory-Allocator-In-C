@@ -1,5 +1,12 @@
 # Memory Allocator in C
 
+<p align="left">
+      <a href="https://code.visualstudio.com/">
+         <img alt="Vs Code Badge" title="Vscode" src="https://custom-icon-badges.demolab.com/badge/Made%20with-vscode-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white"/></a>
+      <a href="https://learn.microsoft.com/en-us/windows/wsl/install">
+         <img alt="WSL Badge" title="WSL" src="https://custom-icon-badges.demolab.com/badge/-WSL-blue?style=for-the-badge&logo=linux&logoColor=black"/></a>
+</p>
+
 The goal of this project was to implement a pretty basic memory allocator to better understand the memory allocation by writting our own `malloc()`, `calloc()`, `realloc()` and `free()`. <br/>
 By implementing these functions on our own we will be able to understand the intuition behind the working of these functions.
 
