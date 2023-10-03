@@ -9,6 +9,7 @@ We'll be implementing,
 memory layout of a program.
 
 <!-- memory layout -->
+![memory layout excalidraw](https://github.com/Harshitv21/Memory-Allocator-In-C/assets/96187405/405b5b61-9dc8-4431-8236-4bc2999d6c3e)
 
 A process runs within its own virtual address space that’s distinct from the virtual address spaces of other processes. This virtual address space typically comprises of 5 sections:
 1. **Text section**: The part that contains the binary instructions to be executed by the processor.
@@ -53,6 +54,7 @@ We need to understand that the heap memory the operating system has provided is 
 Imagine your heap to be something like a long loaf of bread that you can stretch and shrink at one end, but you have to keep it in one piece.
 
 <!-- loaf of bread -->
+![loafOfBread](https://github.com/Harshitv21/Memory-Allocator-In-C/assets/96187405/33b2ff82-c856-489e-b2b6-65ee780db93b)
 
 We will make a distinction between *freeing memory* and *releasing memory*.
 Freeing a block of memory does not necessarily mean we release memory back to OS. It just means that we keep the block marked as "free".
@@ -77,6 +79,7 @@ When a program requests for **size** bytes of memory, we calculate `total_siz
 Now, each one of our memory blocks will look like:
 
 <!-- memory block -->
+![Memory block excalidraw](https://github.com/Harshitv21/Memory-Allocator-In-C/assets/96187405/12662d01-cbcb-4dbb-afc2-e5ad9c81a615)
 
 We can’t be completely sure the blocks of memory allocated by our malloc is contiguous, so to keep track of the memory allocated by our malloc, we will put them in a linked list. Our header will now look like:
 
@@ -91,6 +94,7 @@ struct header_t {
 And the linked list of memory blocks like this:
 
 <!-- linked list of memory block -->
+![Linked list of memory block excalidraw](https://github.com/Harshitv21/Memory-Allocator-In-C/assets/96187405/1232ba6b-2927-4ab6-adf6-ea4909fe6e00)
 
 Wrap the entire header struct in a `union` along with a stub variable of size 16 bytes. This makes the header end up on a memory address aligned to 16 bytes.
 
