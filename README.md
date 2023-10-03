@@ -5,7 +5,7 @@ By implementing these functions on our own we will be able to understand the int
 
 ## Docs
 
-A step-by-step beginner friendly guide can be found here for anyone who wants to implement or try it for yourself. <br/>
+A step-by-step beginner friendly guide can be found [here](https://github.com/Harshitv21/Memory-Allocator-In-C/blob/main/Docs/Memory%20Allocator.md) for anyone who wants to implement or try it for yourself. <br/>
 Source code for this project can be found here.
 
 ## Compiling and using our memory allocator
