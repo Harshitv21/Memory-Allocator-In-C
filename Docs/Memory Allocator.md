@@ -8,7 +8,7 @@ We'll be implementing,
 
 memory layout of a program.
 
-![](/Assets/memory%20layout.excalidraw.svg)
+<!-- memory layout -->
 
 A process runs within its own virtual address space that’s distinct from the virtual address spaces of other processes. This virtual address space typically comprises of 5 sections:
 1. **Text section**: The part that contains the binary instructions to be executed by the processor.
@@ -52,7 +52,7 @@ We need to understand that the heap memory the operating system has provided is 
 
 Imagine your heap to be something like a long loaf of bread that you can stretch and shrink at one end, but you have to keep it in one piece.
 
-![](/Assets/loafOfBread.jpg)
+<!-- loaf of bread -->
 
 We will make a distinction between *freeing memory* and *releasing memory*.
 Freeing a block of memory does not necessarily mean we release memory back to OS. It just means that we keep the block marked as "free".
@@ -76,7 +76,7 @@ When a program requests for **size** bytes of memory, we calculate `total_siz
 
 Now, each one of our memory blocks will look like:
 
-![](/Assets/Memory%20block.excalidraw.svg)
+<!-- memory block -->
 
 We can’t be completely sure the blocks of memory allocated by our malloc is contiguous, so to keep track of the memory allocated by our malloc, we will put them in a linked list. Our header will now look like:
 
@@ -90,7 +90,7 @@ struct header_t {
 
 And the linked list of memory blocks like this:
 
-![](/Assets/Linked%20list%20of%20memory%20block.excalidraw.svg)
+<!-- linked list of memory block -->
 
 Wrap the entire header struct in a `union` along with a stub variable of size 16 bytes. This makes the header end up on a memory address aligned to 16 bytes.
 
